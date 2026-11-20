@@ -1,122 +1,122 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import React, { useState, useEffect } from 'react';
+import Sidebar from './components/Sidebar';
+import Header from './components/Header';
+import OverviewPage from './pages/OverviewPage';
+import RevenuePage from './pages/RevenuePage';
+import ExpensesPage from './pages/ExpensesPage';
+import TransactionsPage from './pages/TransactionsPage';
+import PaymentsPage from './pages/PaymentsPage';
+import AnomaliesPage from './pages/AnomaliesPage';
+import ReportsPage from './pages/ReportsPage';
+import DataQualityPage from './pages/DataQualityPage';
+import {
+  fetchDashboardSummary,
+  fetchDashboardTrends,
+  fetchRevenueAnalytics,
+  fetchExpenseAnalytics,
+  fetchPaymentAnalytics,
+} from './services/api';
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [activeTab, setActiveTab] = useState('overview');
+  const [filters, setFilters] = useState({
+    startDate: '',
+    endDate: '',
+    region: '',
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [summary, setSummary] = useState(null);
+  const [trends, setTrends] = useState([]);
+  const [revenueData, setRevenueData] = useState(null);
+  const [expenseData, setExpenseData] = useState(null);
+  const [paymentData, setPaymentData] = useState(null);
+
+  const loadDashboardData = async () => {
+    setLoading(true);
+    try {
+      const params = {
+        start_date: filters.startDate,
+        end_date: filters.endDate,
+        region: filters.region,
+      };
+
+      const [sumRes, trendsRes, revRes, expRes, payRes] = await Promise.all([
+        fetchDashboardSummary(params),
+        fetchDashboardTrends(params),
+        fetchRevenueAnalytics(params),
+        fetchExpenseAnalytics(params),
+        fetchPaymentAnalytics(params),
+      ]);
+
+      setSummary(sumRes);
+      setTrends(trendsRes || []);
+      setRevenueData(revRes);
+      setExpenseData(expRes);
+      setPaymentData(payRes);
+    } catch (err) {
+      console.error('Failed to load dashboard data:', err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    loadDashboardData();
+  }, [filters]);
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="flex h-screen bg-slate-100 overflow-hidden text-slate-900">
+      {/* Left Sidebar */}
+      <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
 
-      <div className="ticks"></div>
+      {/* Main Content Area */}
+      <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
+        {/* Global Filter Header */}
+        <Header
+          filters={filters}
+          setFilters={setFilters}
+          onRefresh={loadDashboardData}
+          loading={loading}
+        />
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        {/* Dynamic Page Container */}
+        <main className="flex-1 overflow-y-auto p-6 lg:p-8">
+          <div className="max-w-7xl mx-auto pb-12">
+            {activeTab === 'overview' && (
+              <OverviewPage
+                summary={summary}
+                trends={trends}
+                revenueData={revenueData}
+                expenseData={expenseData}
+                paymentData={paymentData}
+              />
+            )}
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+            {activeTab === 'revenue' && (
+              <RevenuePage revenueData={revenueData} trends={trends} />
+            )}
+
+            {activeTab === 'expenses' && (
+              <ExpensesPage expenseData={expenseData} trends={trends} />
+            )}
+
+            {activeTab === 'transactions' && (
+              <TransactionsPage globalFilters={filters} />
+            )}
+
+            {activeTab === 'payments' && (
+              <PaymentsPage paymentData={paymentData} />
+            )}
+
+            {activeTab === 'anomalies' && <AnomaliesPage />}
+
+            {activeTab === 'reports' && <ReportsPage />}
+
+            {activeTab === 'data-quality' && <DataQualityPage />}
+          </div>
+        </main>
+      </div>
+    </div>
+  );
 }
-
-export default App
