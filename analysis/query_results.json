@@ -1,0 +1,1533 @@
+{
+  "01_monthly_revenue.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "month",
+      "total_income_transactions",
+      "total_revenue",
+      "avg_revenue_per_transaction"
+    ],
+    "row_count": 18,
+    "preview_sample": [
+      {
+        "month": "2025-01-01 00:00:00",
+        "total_income_transactions": "180",
+        "total_revenue": "3936869.62",
+        "avg_revenue_per_transaction": "21871.50"
+      },
+      {
+        "month": "2025-02-01 00:00:00",
+        "total_income_transactions": "410",
+        "total_revenue": "6826786.84",
+        "avg_revenue_per_transaction": "16650.70"
+      },
+      {
+        "month": "2025-03-01 00:00:00",
+        "total_income_transactions": "768",
+        "total_revenue": "14749064.34",
+        "avg_revenue_per_transaction": "19204.51"
+      },
+      {
+        "month": "2025-04-01 00:00:00",
+        "total_income_transactions": "1123",
+        "total_revenue": "20371012.78",
+        "avg_revenue_per_transaction": "18139.82"
+      },
+      {
+        "month": "2025-05-01 00:00:00",
+        "total_income_transactions": "1439",
+        "total_revenue": "26207600.24",
+        "avg_revenue_per_transaction": "18212.37"
+      },
+      {
+        "month": "2025-06-01 00:00:00",
+        "total_income_transactions": "1762",
+        "total_revenue": "30265502.92",
+        "avg_revenue_per_transaction": "17176.79"
+      },
+      {
+        "month": "2025-07-01 00:00:00",
+        "total_income_transactions": "2108",
+        "total_revenue": "37080815.89",
+        "avg_revenue_per_transaction": "17590.52"
+      },
+      {
+        "month": "2025-08-01 00:00:00",
+        "total_income_transactions": "2499",
+        "total_revenue": "47106729.22",
+        "avg_revenue_per_transaction": "18850.23"
+      },
+      {
+        "month": "2025-09-01 00:00:00",
+        "total_income_transactions": "2666",
+        "total_revenue": "47725297.84",
+        "avg_revenue_per_transaction": "17901.46"
+      },
+      {
+        "month": "2025-10-01 00:00:00",
+        "total_income_transactions": "3156",
+        "total_revenue": "60874346.64",
+        "avg_revenue_per_transaction": "19288.45"
+      }
+    ]
+  },
+  "02_expense_breakdown.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "category",
+      "transaction_count",
+      "total_expense",
+      "percentage_of_total_expense"
+    ],
+    "row_count": 8,
+    "preview_sample": [
+      {
+        "category": "Payroll",
+        "transaction_count": "5566",
+        "total_expense": "709935861.29",
+        "percentage_of_total_expense": "58.41"
+      },
+      {
+        "category": "Rent",
+        "transaction_count": "1788",
+        "total_expense": "169840178.57",
+        "percentage_of_total_expense": "13.97"
+      },
+      {
+        "category": "Marketing",
+        "transaction_count": "4482",
+        "total_expense": "157213155.29",
+        "percentage_of_total_expense": "12.94"
+      },
+      {
+        "category": "Operations",
+        "transaction_count": "4888",
+        "total_expense": "114343278.76",
+        "percentage_of_total_expense": "9.41"
+      },
+      {
+        "category": "Software",
+        "transaction_count": "2089",
+        "total_expense": "36159120.35",
+        "percentage_of_total_expense": "2.98"
+      },
+      {
+        "category": "Logistics",
+        "transaction_count": "1327",
+        "total_expense": "12882260.48",
+        "percentage_of_total_expense": "1.06"
+      },
+      {
+        "category": "Utilities",
+        "transaction_count": "1372",
+        "total_expense": "10363176.28",
+        "percentage_of_total_expense": "0.85"
+      },
+      {
+        "category": "Other Expenses",
+        "transaction_count": "884",
+        "total_expense": "4644788.83",
+        "percentage_of_total_expense": "0.38"
+      }
+    ]
+  },
+  "03_top_customers.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "customer_id",
+      "completed_orders",
+      "total_revenue_generated",
+      "avg_order_value",
+      "first_transaction_date",
+      "latest_transaction_date"
+    ],
+    "row_count": 10,
+    "preview_sample": [
+      {
+        "customer_id": "CUST1074",
+        "completed_orders": "105",
+        "total_revenue_generated": "3935812.33",
+        "avg_order_value": "37483.93",
+        "first_transaction_date": "2025-02-06",
+        "latest_transaction_date": "2026-06-13"
+      },
+      {
+        "customer_id": "CUST1021",
+        "completed_orders": "110",
+        "total_revenue_generated": "3474711.07",
+        "avg_order_value": "31588.28",
+        "first_transaction_date": "2025-01-14",
+        "latest_transaction_date": "2026-06-02"
+      },
+      {
+        "customer_id": "CUST1234",
+        "completed_orders": "97",
+        "total_revenue_generated": "3243051.78",
+        "avg_order_value": "33433.52",
+        "first_transaction_date": "2025-01-20",
+        "latest_transaction_date": "2026-06-07"
+      },
+      {
+        "customer_id": "CUST1217",
+        "completed_orders": "92",
+        "total_revenue_generated": "3177610.79",
+        "avg_order_value": "34539.25",
+        "first_transaction_date": "2025-01-14",
+        "latest_transaction_date": "2026-05-13"
+      },
+      {
+        "customer_id": "CUST1031",
+        "completed_orders": "87",
+        "total_revenue_generated": "3024455.44",
+        "avg_order_value": "34763.86",
+        "first_transaction_date": "2025-01-11",
+        "latest_transaction_date": "2026-06-04"
+      },
+      {
+        "customer_id": "CUST1123",
+        "completed_orders": "111",
+        "total_revenue_generated": "2998114.67",
+        "avg_order_value": "27010.04",
+        "first_transaction_date": "2025-03-16",
+        "latest_transaction_date": "2026-05-29"
+      },
+      {
+        "customer_id": "CUST1188",
+        "completed_orders": "98",
+        "total_revenue_generated": "2931249.52",
+        "avg_order_value": "29910.71",
+        "first_transaction_date": "2025-02-14",
+        "latest_transaction_date": "2026-06-03"
+      },
+      {
+        "customer_id": "CUST1099",
+        "completed_orders": "110",
+        "total_revenue_generated": "2924879.41",
+        "avg_order_value": "26589.81",
+        "first_transaction_date": "2025-01-26",
+        "latest_transaction_date": "2026-05-23"
+      },
+      {
+        "customer_id": "CUST1112",
+        "completed_orders": "111",
+        "total_revenue_generated": "2769219.77",
+        "avg_order_value": "24947.93",
+        "first_transaction_date": "2025-03-18",
+        "latest_transaction_date": "2026-06-21"
+      },
+      {
+        "customer_id": "CUST1222",
+        "completed_orders": "103",
+        "total_revenue_generated": "2746367.09",
+        "avg_order_value": "26663.76",
+        "first_transaction_date": "2025-03-10",
+        "latest_transaction_date": "2026-06-09"
+      }
+    ]
+  },
+  "04_mom_revenue_growth.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "month",
+      "revenue",
+      "prev_month_revenue",
+      "mom_growth_pct"
+    ],
+    "row_count": 18,
+    "preview_sample": [
+      {
+        "month": "2025-01-01 00:00:00",
+        "revenue": "3936869.62",
+        "prev_month_revenue": "None",
+        "mom_growth_pct": "None"
+      },
+      {
+        "month": "2025-02-01 00:00:00",
+        "revenue": "6826786.84",
+        "prev_month_revenue": "3936869.62",
+        "mom_growth_pct": "73.41"
+      },
+      {
+        "month": "2025-03-01 00:00:00",
+        "revenue": "14749064.34",
+        "prev_month_revenue": "6826786.84",
+        "mom_growth_pct": "116.05"
+      },
+      {
+        "month": "2025-04-01 00:00:00",
+        "revenue": "20371012.78",
+        "prev_month_revenue": "14749064.34",
+        "mom_growth_pct": "38.12"
+      },
+      {
+        "month": "2025-05-01 00:00:00",
+        "revenue": "26207600.24",
+        "prev_month_revenue": "20371012.78",
+        "mom_growth_pct": "28.65"
+      },
+      {
+        "month": "2025-06-01 00:00:00",
+        "revenue": "30265502.92",
+        "prev_month_revenue": "26207600.24",
+        "mom_growth_pct": "15.48"
+      },
+      {
+        "month": "2025-07-01 00:00:00",
+        "revenue": "37080815.89",
+        "prev_month_revenue": "30265502.92",
+        "mom_growth_pct": "22.52"
+      },
+      {
+        "month": "2025-08-01 00:00:00",
+        "revenue": "47106729.22",
+        "prev_month_revenue": "37080815.89",
+        "mom_growth_pct": "27.04"
+      },
+      {
+        "month": "2025-09-01 00:00:00",
+        "revenue": "47725297.84",
+        "prev_month_revenue": "47106729.22",
+        "mom_growth_pct": "1.31"
+      },
+      {
+        "month": "2025-10-01 00:00:00",
+        "revenue": "60874346.64",
+        "prev_month_revenue": "47725297.84",
+        "mom_growth_pct": "27.55"
+      }
+    ]
+  },
+  "05_transaction_success_rate.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "payment_method",
+      "total_initiated",
+      "successful_count",
+      "failed_count",
+      "reversed_count",
+      "success_rate_pct",
+      "failure_rate_pct"
+    ],
+    "row_count": 5,
+    "preview_sample": [
+      {
+        "payment_method": "UPI",
+        "total_initiated": "26214",
+        "successful_count": "22247",
+        "failed_count": "1901",
+        "reversed_count": "777",
+        "success_rate_pct": "84.87",
+        "failure_rate_pct": "7.25"
+      },
+      {
+        "payment_method": "Credit Card",
+        "total_initiated": "18114",
+        "successful_count": "15412",
+        "failed_count": "1341",
+        "reversed_count": "515",
+        "success_rate_pct": "85.08",
+        "failure_rate_pct": "7.4"
+      },
+      {
+        "payment_method": "Bank Transfer",
+        "total_initiated": "12368",
+        "successful_count": "10473",
+        "failed_count": "876",
+        "reversed_count": "382",
+        "success_rate_pct": "84.68",
+        "failure_rate_pct": "7.08"
+      },
+      {
+        "payment_method": "Debit Card",
+        "total_initiated": "8351",
+        "successful_count": "7132",
+        "failed_count": "586",
+        "reversed_count": "220",
+        "success_rate_pct": "85.4",
+        "failure_rate_pct": "7.02"
+      },
+      {
+        "payment_method": "Wallet",
+        "total_initiated": "4090",
+        "successful_count": "3484",
+        "failed_count": "297",
+        "reversed_count": "122",
+        "success_rate_pct": "85.18",
+        "failure_rate_pct": "7.26"
+      }
+    ]
+  },
+  "06_net_cash_flow.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "month",
+      "total_income",
+      "total_expense",
+      "net_cash_flow",
+      "net_cash_margin_pct"
+    ],
+    "row_count": 18,
+    "preview_sample": [
+      {
+        "month": "2025-01-01 00:00:00",
+        "total_income": "3936869.62",
+        "total_expense": "4761799.23",
+        "net_cash_flow": "-824929.61",
+        "net_cash_margin_pct": "-20.95"
+      },
+      {
+        "month": "2025-02-01 00:00:00",
+        "total_income": "6826786.84",
+        "total_expense": "12014684.91",
+        "net_cash_flow": "-5187898.07",
+        "net_cash_margin_pct": "-75.99"
+      },
+      {
+        "month": "2025-03-01 00:00:00",
+        "total_income": "14749064.34",
+        "total_expense": "23939804.42",
+        "net_cash_flow": "-9190740.08",
+        "net_cash_margin_pct": "-62.31"
+      },
+      {
+        "month": "2025-04-01 00:00:00",
+        "total_income": "20371012.78",
+        "total_expense": "38492987.47",
+        "net_cash_flow": "-18121974.69",
+        "net_cash_margin_pct": "-88.96"
+      },
+      {
+        "month": "2025-05-01 00:00:00",
+        "total_income": "26207600.24",
+        "total_expense": "60294995.51",
+        "net_cash_flow": "-34087395.27",
+        "net_cash_margin_pct": "-130.07"
+      },
+      {
+        "month": "2025-06-01 00:00:00",
+        "total_income": "30265502.92",
+        "total_expense": "56646250.68",
+        "net_cash_flow": "-26380747.76",
+        "net_cash_margin_pct": "-87.16"
+      },
+      {
+        "month": "2025-07-01 00:00:00",
+        "total_income": "37080815.89",
+        "total_expense": "69027169.29",
+        "net_cash_flow": "-31946353.40",
+        "net_cash_margin_pct": "-86.15"
+      },
+      {
+        "month": "2025-08-01 00:00:00",
+        "total_income": "47106729.22",
+        "total_expense": "79942481.76",
+        "net_cash_flow": "-32835752.54",
+        "net_cash_margin_pct": "-69.71"
+      },
+      {
+        "month": "2025-09-01 00:00:00",
+        "total_income": "47725297.84",
+        "total_expense": "84071507.10",
+        "net_cash_flow": "-36346209.26",
+        "net_cash_margin_pct": "-76.16"
+      },
+      {
+        "month": "2025-10-01 00:00:00",
+        "total_income": "60874346.64",
+        "total_expense": "105918708.16",
+        "net_cash_flow": "-45044361.52",
+        "net_cash_margin_pct": "-74.0"
+      }
+    ]
+  },
+  "07_revenue_by_category.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "category",
+      "transaction_count",
+      "total_revenue",
+      "pct_of_total_revenue",
+      "cumulative_pct"
+    ],
+    "row_count": 5,
+    "preview_sample": [
+      {
+        "category": "Services",
+        "transaction_count": "9145",
+        "total_revenue": "386327426.42",
+        "pct_of_total_revenue": "57.38",
+        "cumulative_pct": "57.38"
+      },
+      {
+        "category": "Sales",
+        "transaction_count": "16361",
+        "total_revenue": "197014110.30",
+        "pct_of_total_revenue": "29.26",
+        "cumulative_pct": "86.64"
+      },
+      {
+        "category": "Subscription",
+        "transaction_count": "6580",
+        "total_revenue": "63195247.21",
+        "pct_of_total_revenue": "9.39",
+        "cumulative_pct": "96.03"
+      },
+      {
+        "category": "Other Income",
+        "transaction_count": "1839",
+        "total_revenue": "14283481.71",
+        "pct_of_total_revenue": "2.12",
+        "cumulative_pct": "98.15"
+      },
+      {
+        "category": "Interest",
+        "transaction_count": "2427",
+        "total_revenue": "12441074.51",
+        "pct_of_total_revenue": "1.85",
+        "cumulative_pct": "100.0"
+      }
+    ]
+  },
+  "08_revenue_by_payment_method.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "payment_method",
+      "transaction_count",
+      "total_settled_amount",
+      "avg_transaction_size",
+      "volume_share_pct",
+      "value_share_pct"
+    ],
+    "row_count": 5,
+    "preview_sample": [
+      {
+        "payment_method": "UPI",
+        "transaction_count": "22247",
+        "total_settled_amount": "729459852.83",
+        "avg_transaction_size": "32789.13",
+        "volume_share_pct": "37.87",
+        "value_share_pct": "38.62"
+      },
+      {
+        "payment_method": "Credit Card",
+        "transaction_count": "15412",
+        "total_settled_amount": "502716442.06",
+        "avg_transaction_size": "32618.51",
+        "volume_share_pct": "26.23",
+        "value_share_pct": "26.62"
+      },
+      {
+        "payment_method": "Bank Transfer",
+        "transaction_count": "10473",
+        "total_settled_amount": "327690593.12",
+        "avg_transaction_size": "31289.09",
+        "volume_share_pct": "17.83",
+        "value_share_pct": "17.35"
+      },
+      {
+        "payment_method": "Debit Card",
+        "transaction_count": "7132",
+        "total_settled_amount": "225977330.50",
+        "avg_transaction_size": "31684.99",
+        "volume_share_pct": "12.14",
+        "value_share_pct": "11.97"
+      },
+      {
+        "payment_method": "Wallet",
+        "transaction_count": "3484",
+        "total_settled_amount": "102798941.49",
+        "avg_transaction_size": "29506.01",
+        "volume_share_pct": "5.93",
+        "value_share_pct": "5.44"
+      }
+    ]
+  },
+  "09_average_transaction_value.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "transaction_type",
+      "category",
+      "settled_count",
+      "avg_transaction_value",
+      "min_amount",
+      "max_amount"
+    ],
+    "row_count": 13,
+    "preview_sample": [
+      {
+        "transaction_type": "Expense",
+        "category": "Payroll",
+        "settled_count": "5566",
+        "avg_transaction_value": "127548.66",
+        "min_amount": "17801.65",
+        "max_amount": "12385526.32"
+      },
+      {
+        "transaction_type": "Expense",
+        "category": "Rent",
+        "settled_count": "1788",
+        "avg_transaction_value": "94988.91",
+        "min_amount": "12696.20",
+        "max_amount": "6513520.60"
+      },
+      {
+        "transaction_type": "Expense",
+        "category": "Marketing",
+        "settled_count": "4482",
+        "avg_transaction_value": "35076.56",
+        "min_amount": "4957.84",
+        "max_amount": "4432493.34"
+      },
+      {
+        "transaction_type": "Expense",
+        "category": "Operations",
+        "settled_count": "4888",
+        "avg_transaction_value": "23392.65",
+        "min_amount": "3587.05",
+        "max_amount": "2282110.08"
+      },
+      {
+        "transaction_type": "Expense",
+        "category": "Software",
+        "settled_count": "2089",
+        "avg_transaction_value": "17309.30",
+        "min_amount": "2275.47",
+        "max_amount": "1121572.28"
+      },
+      {
+        "transaction_type": "Expense",
+        "category": "Logistics",
+        "settled_count": "1327",
+        "avg_transaction_value": "9707.81",
+        "min_amount": "1437.19",
+        "max_amount": "437463.33"
+      },
+      {
+        "transaction_type": "Expense",
+        "category": "Utilities",
+        "settled_count": "1372",
+        "avg_transaction_value": "7553.34",
+        "min_amount": "1167.03",
+        "max_amount": "257633.99"
+      },
+      {
+        "transaction_type": "Expense",
+        "category": "Other Expenses",
+        "settled_count": "884",
+        "avg_transaction_value": "5254.29",
+        "min_amount": "765.83",
+        "max_amount": "239963.96"
+      },
+      {
+        "transaction_type": "Income",
+        "category": "Services",
+        "settled_count": "9145",
+        "avg_transaction_value": "42244.66",
+        "min_amount": "5722.99",
+        "max_amount": "1969383.56"
+      },
+      {
+        "transaction_type": "Income",
+        "category": "Sales",
+        "settled_count": "16361",
+        "avg_transaction_value": "12041.69",
+        "min_amount": "1318.10",
+        "max_amount": "845343.92"
+      }
+    ]
+  },
+  "10_running_revenue.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "month",
+      "monthly_revenue",
+      "cumulative_running_revenue"
+    ],
+    "row_count": 18,
+    "preview_sample": [
+      {
+        "month": "2025-01-01 00:00:00",
+        "monthly_revenue": "3936869.62",
+        "cumulative_running_revenue": "3936869.62"
+      },
+      {
+        "month": "2025-02-01 00:00:00",
+        "monthly_revenue": "6826786.84",
+        "cumulative_running_revenue": "10763656.46"
+      },
+      {
+        "month": "2025-03-01 00:00:00",
+        "monthly_revenue": "14749064.34",
+        "cumulative_running_revenue": "25512720.80"
+      },
+      {
+        "month": "2025-04-01 00:00:00",
+        "monthly_revenue": "20371012.78",
+        "cumulative_running_revenue": "45883733.58"
+      },
+      {
+        "month": "2025-05-01 00:00:00",
+        "monthly_revenue": "26207600.24",
+        "cumulative_running_revenue": "72091333.82"
+      },
+      {
+        "month": "2025-06-01 00:00:00",
+        "monthly_revenue": "30265502.92",
+        "cumulative_running_revenue": "102356836.74"
+      },
+      {
+        "month": "2025-07-01 00:00:00",
+        "monthly_revenue": "37080815.89",
+        "cumulative_running_revenue": "139437652.63"
+      },
+      {
+        "month": "2025-08-01 00:00:00",
+        "monthly_revenue": "47106729.22",
+        "cumulative_running_revenue": "186544381.85"
+      },
+      {
+        "month": "2025-09-01 00:00:00",
+        "monthly_revenue": "47725297.84",
+        "cumulative_running_revenue": "234269679.69"
+      },
+      {
+        "month": "2025-10-01 00:00:00",
+        "monthly_revenue": "60874346.64",
+        "cumulative_running_revenue": "295144026.33"
+      }
+    ]
+  },
+  "11_top_categories_ranking.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "quarter",
+      "category",
+      "quarterly_spend",
+      "spend_rank"
+    ],
+    "row_count": 48,
+    "preview_sample": [
+      {
+        "quarter": "2025-01-01 00:00:00",
+        "category": "Payroll",
+        "quarterly_spend": "23813983.00",
+        "spend_rank": "1"
+      },
+      {
+        "quarter": "2025-01-01 00:00:00",
+        "category": "Marketing",
+        "quarterly_spend": "5757392.74",
+        "spend_rank": "2"
+      },
+      {
+        "quarter": "2025-01-01 00:00:00",
+        "category": "Rent",
+        "quarterly_spend": "5039248.32",
+        "spend_rank": "3"
+      },
+      {
+        "quarter": "2025-01-01 00:00:00",
+        "category": "Operations",
+        "quarterly_spend": "3850788.84",
+        "spend_rank": "4"
+      },
+      {
+        "quarter": "2025-01-01 00:00:00",
+        "category": "Software",
+        "quarterly_spend": "1261963.04",
+        "spend_rank": "5"
+      },
+      {
+        "quarter": "2025-01-01 00:00:00",
+        "category": "Logistics",
+        "quarterly_spend": "476305.33",
+        "spend_rank": "6"
+      },
+      {
+        "quarter": "2025-01-01 00:00:00",
+        "category": "Utilities",
+        "quarterly_spend": "367881.30",
+        "spend_rank": "7"
+      },
+      {
+        "quarter": "2025-01-01 00:00:00",
+        "category": "Other Expenses",
+        "quarterly_spend": "148725.99",
+        "spend_rank": "8"
+      },
+      {
+        "quarter": "2025-04-01 00:00:00",
+        "category": "Payroll",
+        "quarterly_spend": "95033181.34",
+        "spend_rank": "1"
+      },
+      {
+        "quarter": "2025-04-01 00:00:00",
+        "category": "Rent",
+        "quarterly_spend": "21144313.31",
+        "spend_rank": "2"
+      }
+    ]
+  },
+  "12_expense_growth_mom.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "month",
+      "total_expense",
+      "prev_month_expense",
+      "net_expense_change",
+      "mom_expense_growth_pct"
+    ],
+    "row_count": 18,
+    "preview_sample": [
+      {
+        "month": "2025-01-01 00:00:00",
+        "total_expense": "4761799.23",
+        "prev_month_expense": "None",
+        "net_expense_change": "None",
+        "mom_expense_growth_pct": "None"
+      },
+      {
+        "month": "2025-02-01 00:00:00",
+        "total_expense": "12014684.91",
+        "prev_month_expense": "4761799.23",
+        "net_expense_change": "7252885.68",
+        "mom_expense_growth_pct": "152.31"
+      },
+      {
+        "month": "2025-03-01 00:00:00",
+        "total_expense": "23939804.42",
+        "prev_month_expense": "12014684.91",
+        "net_expense_change": "11925119.51",
+        "mom_expense_growth_pct": "99.25"
+      },
+      {
+        "month": "2025-04-01 00:00:00",
+        "total_expense": "38492987.47",
+        "prev_month_expense": "23939804.42",
+        "net_expense_change": "14553183.05",
+        "mom_expense_growth_pct": "60.79"
+      },
+      {
+        "month": "2025-05-01 00:00:00",
+        "total_expense": "60294995.51",
+        "prev_month_expense": "38492987.47",
+        "net_expense_change": "21802008.04",
+        "mom_expense_growth_pct": "56.64"
+      },
+      {
+        "month": "2025-06-01 00:00:00",
+        "total_expense": "56646250.68",
+        "prev_month_expense": "60294995.51",
+        "net_expense_change": "-3648744.83",
+        "mom_expense_growth_pct": "-6.05"
+      },
+      {
+        "month": "2025-07-01 00:00:00",
+        "total_expense": "69027169.29",
+        "prev_month_expense": "56646250.68",
+        "net_expense_change": "12380918.61",
+        "mom_expense_growth_pct": "21.86"
+      },
+      {
+        "month": "2025-08-01 00:00:00",
+        "total_expense": "79942481.76",
+        "prev_month_expense": "69027169.29",
+        "net_expense_change": "10915312.47",
+        "mom_expense_growth_pct": "15.81"
+      },
+      {
+        "month": "2025-09-01 00:00:00",
+        "total_expense": "84071507.10",
+        "prev_month_expense": "79942481.76",
+        "net_expense_change": "4129025.34",
+        "mom_expense_growth_pct": "5.16"
+      },
+      {
+        "month": "2025-10-01 00:00:00",
+        "total_expense": "105918708.16",
+        "prev_month_expense": "84071507.10",
+        "net_expense_change": "21847201.06",
+        "mom_expense_growth_pct": "25.99"
+      }
+    ]
+  },
+  "13_regional_performance.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "region",
+      "total_transactions",
+      "regional_revenue",
+      "regional_expense",
+      "regional_net_cash_flow",
+      "regional_net_margin_pct"
+    ],
+    "row_count": 5,
+    "preview_sample": [
+      {
+        "region": "South",
+        "total_transactions": "20343",
+        "regional_revenue": "231051089.71",
+        "regional_expense": "417539013.93",
+        "regional_net_cash_flow": "-186487924.22",
+        "regional_net_margin_pct": "-80.71"
+      },
+      {
+        "region": "West",
+        "total_transactions": "16201",
+        "regional_revenue": "185546170.80",
+        "regional_expense": "313497608.65",
+        "regional_net_cash_flow": "-127951437.85",
+        "regional_net_margin_pct": "-68.96"
+      },
+      {
+        "region": "North",
+        "total_transactions": "12595",
+        "regional_revenue": "145369635.96",
+        "regional_expense": "293691500.14",
+        "regional_net_cash_flow": "-148321864.18",
+        "regional_net_margin_pct": "-102.03"
+      },
+      {
+        "region": "East",
+        "total_transactions": "5726",
+        "regional_revenue": "67768450.34",
+        "regional_expense": "112560587.29",
+        "regional_net_cash_flow": "-44792136.95",
+        "regional_net_margin_pct": "-66.1"
+      },
+      {
+        "region": "Central",
+        "total_transactions": "3883",
+        "regional_revenue": "43525993.34",
+        "regional_expense": "78093109.84",
+        "regional_net_cash_flow": "-34567116.50",
+        "regional_net_margin_pct": "-79.42"
+      }
+    ]
+  },
+  "14_high_value_transactions.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "transaction_id",
+      "transaction_date",
+      "transaction_type",
+      "category",
+      "payment_method",
+      "amount",
+      "customer_id",
+      "merchant"
+    ],
+    "row_count": 25,
+    "preview_sample": [
+      {
+        "transaction_id": "TXN131719",
+        "transaction_date": "2026-04-11",
+        "transaction_type": "Expense",
+        "category": "Payroll",
+        "payment_method": "Credit Card",
+        "amount": "12385526.32",
+        "customer_id": "CUST1749",
+        "merchant": "ICICI Direct Staff Transfer"
+      },
+      {
+        "transaction_id": "TXN154973",
+        "transaction_date": "2026-04-07",
+        "transaction_type": "Expense",
+        "category": "Rent",
+        "payment_method": "UPI",
+        "amount": "6513520.60",
+        "customer_id": "CUST1921",
+        "merchant": "DLF CyberCity Properties"
+      },
+      {
+        "transaction_id": "TXN136811",
+        "transaction_date": "2026-03-15",
+        "transaction_type": "Expense",
+        "category": "Payroll",
+        "payment_method": "UPI",
+        "amount": "6397018.54",
+        "customer_id": "CUST2100",
+        "merchant": "Contractor Payment Pool"
+      },
+      {
+        "transaction_id": "TXN116237",
+        "transaction_date": "2025-10-27",
+        "transaction_type": "Expense",
+        "category": "Payroll",
+        "payment_method": "UPI",
+        "amount": "6247368.46",
+        "customer_id": "CUST2071",
+        "merchant": "ICICI Direct Staff Transfer"
+      },
+      {
+        "transaction_id": "TXN115502",
+        "transaction_date": "2025-11-17",
+        "transaction_type": "Expense",
+        "category": "Rent",
+        "payment_method": "UPI",
+        "amount": "6018191.36",
+        "customer_id": "CUST_ANON",
+        "merchant": "DLF CyberCity Properties"
+      },
+      {
+        "transaction_id": "TXN114453",
+        "transaction_date": "2026-01-05",
+        "transaction_type": "Expense",
+        "category": "Payroll",
+        "payment_method": "UPI",
+        "amount": "4485346.22",
+        "customer_id": "CUST2072",
+        "merchant": "Contractor Payment Pool"
+      },
+      {
+        "transaction_id": "TXN151018",
+        "transaction_date": "2025-12-31",
+        "transaction_type": "Expense",
+        "category": "Payroll",
+        "payment_method": "Debit Card",
+        "amount": "4463887.62",
+        "customer_id": "CUST1349",
+        "merchant": "HDFC Salary Batch"
+      },
+      {
+        "transaction_id": "TXN110211",
+        "transaction_date": "2026-01-26",
+        "transaction_type": "Expense",
+        "category": "Marketing",
+        "payment_method": "UPI",
+        "amount": "4432493.34",
+        "customer_id": "CUST1478",
+        "merchant": "Google Ad Services"
+      },
+      {
+        "transaction_id": "TXN112285",
+        "transaction_date": "2025-04-10",
+        "transaction_type": "Expense",
+        "category": "Payroll",
+        "payment_method": "UPI",
+        "amount": "4277256.64",
+        "customer_id": "CUST1755",
+        "merchant": "HDFC Salary Batch"
+      },
+      {
+        "transaction_id": "TXN168968",
+        "transaction_date": "2025-05-02",
+        "transaction_type": "Expense",
+        "category": "Payroll",
+        "payment_method": "Debit Card",
+        "amount": "3667960.53",
+        "customer_id": "CUST1788",
+        "merchant": "Corporate Payroll Disbursal"
+      }
+    ]
+  },
+  "15_payment_method_failure_rates.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "payment_method",
+      "total_attempts",
+      "failed_attempts",
+      "failed_amount_lost",
+      "failure_rate_pct",
+      "share_of_all_failures_pct"
+    ],
+    "row_count": 5,
+    "preview_sample": [
+      {
+        "payment_method": "UPI",
+        "total_attempts": "26214",
+        "failed_attempts": "1901",
+        "failed_amount_lost": "64447624.15",
+        "failure_rate_pct": "7.25",
+        "share_of_all_failures_pct": "38.01"
+      },
+      {
+        "payment_method": "Credit Card",
+        "total_attempts": "18114",
+        "failed_attempts": "1341",
+        "failed_amount_lost": "45055690.05",
+        "failure_rate_pct": "7.4",
+        "share_of_all_failures_pct": "26.81"
+      },
+      {
+        "payment_method": "Bank Transfer",
+        "total_attempts": "12368",
+        "failed_attempts": "876",
+        "failed_amount_lost": "32219621.59",
+        "failure_rate_pct": "7.08",
+        "share_of_all_failures_pct": "17.52"
+      },
+      {
+        "payment_method": "Debit Card",
+        "total_attempts": "8351",
+        "failed_attempts": "586",
+        "failed_amount_lost": "16762983.81",
+        "failure_rate_pct": "7.02",
+        "share_of_all_failures_pct": "11.72"
+      },
+      {
+        "payment_method": "Wallet",
+        "total_attempts": "4090",
+        "failed_attempts": "297",
+        "failed_amount_lost": "9526792.16",
+        "failure_rate_pct": "7.26",
+        "share_of_all_failures_pct": "5.94"
+      }
+    ]
+  },
+  "16_reversal_impact_analysis.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "category",
+      "total_txns",
+      "reversed_txn_count",
+      "reversed_amount",
+      "gross_category_volume",
+      "reversal_rate_pct"
+    ],
+    "row_count": 13,
+    "preview_sample": [
+      {
+        "category": "Payroll",
+        "total_txns": "6551",
+        "reversed_txn_count": "184",
+        "reversed_amount": "26322355.66",
+        "gross_category_volume": "843032622.90",
+        "reversal_rate_pct": "3.12"
+      },
+      {
+        "category": "Services",
+        "total_txns": "10741",
+        "reversed_txn_count": "315",
+        "reversed_amount": "12937074.84",
+        "gross_category_volume": "456704063.62",
+        "reversal_rate_pct": "2.83"
+      },
+      {
+        "category": "Sales",
+        "total_txns": "19352",
+        "reversed_txn_count": "558",
+        "reversed_amount": "6670574.89",
+        "gross_category_volume": "233014293.21",
+        "reversal_rate_pct": "2.86"
+      },
+      {
+        "category": "Rent",
+        "total_txns": "2090",
+        "reversed_txn_count": "53",
+        "reversed_amount": "5275827.83",
+        "gross_category_volume": "199804069.06",
+        "reversal_rate_pct": "2.64"
+      },
+      {
+        "category": "Marketing",
+        "total_txns": "5245",
+        "reversed_txn_count": "144",
+        "reversed_amount": "4577188.64",
+        "gross_category_volume": "186794115.41",
+        "reversal_rate_pct": "2.45"
+      },
+      {
+        "category": "Operations",
+        "total_txns": "5742",
+        "reversed_txn_count": "183",
+        "reversed_amount": "3911218.04",
+        "gross_category_volume": "132077102.93",
+        "reversal_rate_pct": "2.96"
+      },
+      {
+        "category": "Subscription",
+        "total_txns": "7710",
+        "reversed_txn_count": "229",
+        "reversed_amount": "2403631.12",
+        "gross_category_volume": "75990902.66",
+        "reversal_rate_pct": "3.16"
+      },
+      {
+        "category": "Software",
+        "total_txns": "2429",
+        "reversed_txn_count": "71",
+        "reversed_amount": "1151858.97",
+        "gross_category_volume": "42809994.12",
+        "reversal_rate_pct": "2.69"
+      },
+      {
+        "category": "Logistics",
+        "total_txns": "1572",
+        "reversed_txn_count": "42",
+        "reversed_amount": "895494.28",
+        "gross_category_volume": "15481554.55",
+        "reversal_rate_pct": "5.78"
+      },
+      {
+        "category": "Other Income",
+        "total_txns": "2147",
+        "reversed_txn_count": "64",
+        "reversed_amount": "508514.25",
+        "gross_category_volume": "16544953.45",
+        "reversal_rate_pct": "3.07"
+      }
+    ]
+  },
+  "17_customer_concentration_pareto.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "customer_id",
+      "customer_rank",
+      "customer_revenue",
+      "pct_of_customer_base",
+      "cumulative_revenue_pct"
+    ],
+    "row_count": 73,
+    "preview_sample": [
+      {
+        "customer_id": "CUST1074",
+        "customer_rank": "1",
+        "customer_revenue": "3935812.33",
+        "pct_of_customer_base": "0.08",
+        "cumulative_revenue_pct": "0.6"
+      },
+      {
+        "customer_id": "CUST1021",
+        "customer_rank": "2",
+        "customer_revenue": "3474711.07",
+        "pct_of_customer_base": "0.17",
+        "cumulative_revenue_pct": "1.13"
+      },
+      {
+        "customer_id": "CUST1234",
+        "customer_rank": "3",
+        "customer_revenue": "3243051.78",
+        "pct_of_customer_base": "0.25",
+        "cumulative_revenue_pct": "1.63"
+      },
+      {
+        "customer_id": "CUST1217",
+        "customer_rank": "4",
+        "customer_revenue": "3177610.79",
+        "pct_of_customer_base": "0.33",
+        "cumulative_revenue_pct": "2.12"
+      },
+      {
+        "customer_id": "CUST1031",
+        "customer_rank": "5",
+        "customer_revenue": "3024455.44",
+        "pct_of_customer_base": "0.42",
+        "cumulative_revenue_pct": "2.58"
+      },
+      {
+        "customer_id": "CUST1123",
+        "customer_rank": "6",
+        "customer_revenue": "2998114.67",
+        "pct_of_customer_base": "0.5",
+        "cumulative_revenue_pct": "3.04"
+      },
+      {
+        "customer_id": "CUST1188",
+        "customer_rank": "7",
+        "customer_revenue": "2931249.52",
+        "pct_of_customer_base": "0.58",
+        "cumulative_revenue_pct": "3.49"
+      },
+      {
+        "customer_id": "CUST1099",
+        "customer_rank": "8",
+        "customer_revenue": "2924879.41",
+        "pct_of_customer_base": "0.67",
+        "cumulative_revenue_pct": "3.94"
+      },
+      {
+        "customer_id": "CUST1112",
+        "customer_rank": "9",
+        "customer_revenue": "2769219.77",
+        "pct_of_customer_base": "0.75",
+        "cumulative_revenue_pct": "4.36"
+      },
+      {
+        "customer_id": "CUST1222",
+        "customer_rank": "10",
+        "customer_revenue": "2746367.09",
+        "pct_of_customer_base": "0.83",
+        "cumulative_revenue_pct": "4.78"
+      }
+    ]
+  },
+  "18_daily_cashflow_volatility.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "day",
+      "daily_net_flow",
+      "rolling_7day_avg_flow",
+      "rolling_30day_volatility_stddev"
+    ],
+    "row_count": 541,
+    "preview_sample": [
+      {
+        "day": "2025-01-02",
+        "daily_net_flow": "18906.47",
+        "rolling_7day_avg_flow": "18906.47",
+        "rolling_30day_volatility_stddev": "None"
+      },
+      {
+        "day": "2025-01-04",
+        "daily_net_flow": "-36692.47",
+        "rolling_7day_avg_flow": "-8893.00",
+        "rolling_30day_volatility_stddev": "39314.39"
+      },
+      {
+        "day": "2025-01-05",
+        "daily_net_flow": "-19720.20",
+        "rolling_7day_avg_flow": "-12502.07",
+        "rolling_30day_volatility_stddev": "28493.62"
+      },
+      {
+        "day": "2025-01-06",
+        "daily_net_flow": "-3277.07",
+        "rolling_7day_avg_flow": "-10195.82",
+        "rolling_30day_volatility_stddev": "23717.78"
+      },
+      {
+        "day": "2025-01-07",
+        "daily_net_flow": "-55781.75",
+        "rolling_7day_avg_flow": "-19313.00",
+        "rolling_30day_volatility_stddev": "28939.85"
+      },
+      {
+        "day": "2025-01-08",
+        "daily_net_flow": "33417.63",
+        "rolling_7day_avg_flow": "-10524.57",
+        "rolling_30day_volatility_stddev": "33666.48"
+      },
+      {
+        "day": "2025-01-09",
+        "daily_net_flow": "17725.91",
+        "rolling_7day_avg_flow": "-6488.78",
+        "rolling_30day_volatility_stddev": "32535.20"
+      },
+      {
+        "day": "2025-01-10",
+        "daily_net_flow": "61491.18",
+        "rolling_7day_avg_flow": "-405.25",
+        "rolling_30day_volatility_stddev": "38535.43"
+      },
+      {
+        "day": "2025-01-11",
+        "daily_net_flow": "131668.47",
+        "rolling_7day_avg_flow": "23646.31",
+        "rolling_30day_volatility_stddev": "56278.93"
+      },
+      {
+        "day": "2025-01-12",
+        "daily_net_flow": "33061.47",
+        "rolling_7day_avg_flow": "31186.55",
+        "rolling_30day_volatility_stddev": "53320.76"
+      }
+    ]
+  },
+  "19_status_distribution.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "status",
+      "total_count",
+      "total_monetary_value",
+      "volume_share_pct",
+      "value_share_pct"
+    ],
+    "row_count": 4,
+    "preview_sample": [
+      {
+        "status": "Completed",
+        "total_count": "58748",
+        "total_monetary_value": "1888643160.00",
+        "volume_share_pct": "84.97",
+        "value_share_pct": "84.51"
+      },
+      {
+        "status": "Failed",
+        "total_count": "5001",
+        "total_monetary_value": "168012711.76",
+        "volume_share_pct": "7.23",
+        "value_share_pct": "7.52"
+      },
+      {
+        "status": "Pending",
+        "total_count": "3372",
+        "total_monetary_value": "112536659.55",
+        "volume_share_pct": "4.88",
+        "value_share_pct": "5.04"
+      },
+      {
+        "status": "Reversed",
+        "total_count": "2016",
+        "total_monetary_value": "65546161.63",
+        "volume_share_pct": "2.92",
+        "value_share_pct": "2.93"
+      }
+    ]
+  },
+  "20_weekday_weekend_patterns.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "day_of_week_num",
+      "day_name",
+      "total_transactions",
+      "income_volume",
+      "expense_volume",
+      "avg_transaction_size"
+    ],
+    "row_count": 7,
+    "preview_sample": [
+      {
+        "day_of_week_num": "0",
+        "day_name": "Sunday",
+        "total_transactions": "10032",
+        "income_volume": "99973345.51",
+        "expense_volume": "179697631.31",
+        "avg_transaction_size": "33371.17"
+      },
+      {
+        "day_of_week_num": "1",
+        "day_name": "Monday",
+        "total_transactions": "9819",
+        "income_volume": "95009005.33",
+        "expense_volume": "184509058.71",
+        "avg_transaction_size": "33108.93"
+      },
+      {
+        "day_of_week_num": "2",
+        "day_name": "Tuesday",
+        "total_transactions": "9732",
+        "income_volume": "95860080.13",
+        "expense_volume": "164363938.46",
+        "avg_transaction_size": "32207.49"
+      },
+      {
+        "day_of_week_num": "3",
+        "day_name": "Wednesday",
+        "total_transactions": "9776",
+        "income_volume": "94170445.03",
+        "expense_volume": "168222715.72",
+        "avg_transaction_size": "31492.71"
+      },
+      {
+        "day_of_week_num": "4",
+        "day_name": "Thursday",
+        "total_transactions": "9929",
+        "income_volume": "94696563.76",
+        "expense_volume": "173254852.39",
+        "avg_transaction_size": "31887.03"
+      },
+      {
+        "day_of_week_num": "5",
+        "day_name": "Friday",
+        "total_transactions": "9833",
+        "income_volume": "96050162.24",
+        "expense_volume": "172647280.72",
+        "avg_transaction_size": "31962.53"
+      },
+      {
+        "day_of_week_num": "6",
+        "day_name": "Saturday",
+        "total_transactions": "10016",
+        "income_volume": "97501738.15",
+        "expense_volume": "172686342.54",
+        "avg_transaction_size": "32213.73"
+      }
+    ]
+  },
+  "21_category_growth_matrix.sql": {
+    "status": "SUCCESS",
+    "columns": [
+      "quarter",
+      "transaction_type",
+      "category",
+      "quarterly_spend",
+      "prev_quarter_spend",
+      "qoq_growth_pct"
+    ],
+    "row_count": 78,
+    "preview_sample": [
+      {
+        "quarter": "2025-01-01 00:00:00",
+        "transaction_type": "Expense",
+        "category": "Logistics",
+        "quarterly_spend": "476305.33",
+        "prev_quarter_spend": "None",
+        "qoq_growth_pct": "None"
+      },
+      {
+        "quarter": "2025-04-01 00:00:00",
+        "transaction_type": "Expense",
+        "category": "Logistics",
+        "quarterly_spend": "1715365.34",
+        "prev_quarter_spend": "476305.33",
+        "qoq_growth_pct": "260.14"
+      },
+      {
+        "quarter": "2025-07-01 00:00:00",
+        "transaction_type": "Expense",
+        "category": "Logistics",
+        "quarterly_spend": "2978121.40",
+        "prev_quarter_spend": "1715365.34",
+        "qoq_growth_pct": "73.61"
+      },
+      {
+        "quarter": "2025-10-01 00:00:00",
+        "transaction_type": "Expense",
+        "category": "Logistics",
+        "quarterly_spend": "3243655.70",
+        "prev_quarter_spend": "2978121.40",
+        "qoq_growth_pct": "8.92"
+      },
+      {
+        "quarter": "2026-01-01 00:00:00",
+        "transaction_type": "Expense",
+        "category": "Logistics",
+        "quarterly_spend": "3326420.39",
+        "prev_quarter_spend": "3243655.70",
+        "qoq_growth_pct": "2.55"
+      },
+      {
+        "quarter": "2026-04-01 00:00:00",
+        "transaction_type": "Expense",
+        "category": "Logistics",
+        "quarterly_spend": "1142392.32",
+        "prev_quarter_spend": "3326420.39",
+        "qoq_growth_pct": "-65.66"
+      },
+      {
+        "quarter": "2025-01-01 00:00:00",
+        "transaction_type": "Expense",
+        "category": "Marketing",
+        "quarterly_spend": "5757392.74",
+        "prev_quarter_spend": "None",
+        "qoq_growth_pct": "None"
+      },
+      {
+        "quarter": "2025-04-01 00:00:00",
+        "transaction_type": "Expense",
+        "category": "Marketing",
+        "quarterly_spend": "17435910.82",
+        "prev_quarter_spend": "5757392.74",
+        "qoq_growth_pct": "202.84"
+      },
+      {
+        "quarter": "2025-07-01 00:00:00",
+        "transaction_type": "Expense",
+        "category": "Marketing",
+        "quarterly_spend": "29632111.15",
+        "prev_quarter_spend": "17435910.82",
+        "qoq_growth_pct": "69.95"
+      },
+      {
+        "quarter": "2025-10-01 00:00:00",
+        "transaction_type": "Expense",
+        "category": "Marketing",
+        "quarterly_spend": "42185726.36",
+        "prev_quarter_spend": "29632111.15",
+        "qoq_growth_pct": "42.36"
+      }
+    ]
+  }
+}
