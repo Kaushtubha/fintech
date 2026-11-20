@@ -1,0 +1,16 @@
+{
+  "execution_timestamp": "2026-11-20T13:40:03.264944",
+  "initial_raw_rows": 71100,
+  "duplicates_removed": 1100,
+  "missing_customer_ids_imputed": 2098,
+  "missing_merchants_imputed": 1045,
+  "missing_regions_imputed": 1058,
+  "negative_amounts_rectified": 765,
+  "zero_or_invalid_amounts_dropped": 329,
+  "corrupted_dates_dropped": 534,
+  "categories_standardized": 2071,
+  "payment_methods_standardized": 2538,
+  "statuses_standardized": 2363,
+  "final_cleaned_rows": 69137,
+  "clean_retention_rate_pct": 97.24
+}
